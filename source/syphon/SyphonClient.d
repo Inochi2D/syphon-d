@@ -86,7 +86,7 @@ version(D_ObjectiveC) {
     This method may perform work in the OpenGL context. As with any other OpenGL calls, you must ensure no other threads use those contexts during calls to this method.
     */
 
-    class SyphonClient : NSObject
+    extern class SyphonClient : NSObject
     {
         ObjcObject initWithServerDescription (NSDictionary description, CGLContextObj context, NSDictionary options, void function (SyphonClient client) handler) @selector("initWithServerDescription:context:options:newFrameHandler:");
         @property CGLContextObj context () @selector("context");
