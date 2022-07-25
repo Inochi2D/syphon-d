@@ -1,0 +1,12 @@
+name "syphon-d"
+description "D binding to Syphon"
+authors "Luna"
+copyright "Copyright © 2022, Luna"
+license "BSD 2-clause"
+targetPath "out/"
+
+configuration "macOS" {
+    platforms "osx"
+    lflags "-L-lres/libsyphon -Lframework -LOpenGL"
+    dependency "objc-d" version="1.0.0"
+}
